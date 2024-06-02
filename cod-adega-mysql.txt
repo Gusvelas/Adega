@@ -1,0 +1,25 @@
+create database adega
+
+
+//comando para criar as tabelas
+
+
+CREATE TABLE `adega`.`produto` (
+  `codigoproduto` INT NOT NULL AUTO_INCREMENT,
+  `descricao` VARCHAR(45) NOT NULL,
+  `estoque` INT NOT NULL,
+  `valor` DECIMAL(5,2) NOT NULL,
+  PRIMARY KEY (`codigoproduto`));
+
+
+
+
+CREATE TABLE `adega`.`usuarios` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `nome` VARCHAR(45) NOT NULL,
+  `senha` VARCHAR(45) NOT NULL,
+  `email` VARCHAR(100) NOT NULL,
+  PRIMARY KEY (`id`));
+
+
+
